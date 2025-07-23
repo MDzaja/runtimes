@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["deno.window"]
+  },
+  "tasks": {
+    "test": "deno run --allow-all deno_test.ts",
+    "test:check": "deno check deno_test.ts"
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 120,
+    "indentWidth": 2,
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["deno_test.ts"],
+    "exclude": []
+  },
+  "lint": {
+    "include": ["deno_test.ts"],
+    "exclude": [],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

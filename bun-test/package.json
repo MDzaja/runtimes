@@ -1,0 +1,39 @@
+{
+  "name": "daytona-sdk-bun-test",
+  "version": "1.0.0",
+  "description": "Comprehensive Daytona SDK tests for Bun runtime",
+  "type": "module",
+  "main": "bun_test.ts",
+  "scripts": {
+    "test": "bun run bun_test.ts",
+    "dev": "bun --watch bun_test.ts",
+    "check": "bun check bun_test.ts",
+    "format": "bun fmt bun_test.ts",
+    "install-sdk": "bun add @daytonaio/sdk"
+  },
+  "dependencies": {
+    "@daytonaio/sdk": "0.24.4-alpha.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/bun": "latest",
+    "@types/node": "latest"
+  },
+  "keywords": [
+    "daytona",
+    "sdk",
+    "bun",
+    "typescript",
+    "testing",
+    "sandboxes"
+  ],
+  "author": "Daytona Platforms Inc.",
+  "license": "AGPL-3.0",
+  "engines": {
+    "bun": ">=1.0.0"
+  },
+  "files": [
+    "bun_test.ts",
+    "README.md"
+  ]
+}
