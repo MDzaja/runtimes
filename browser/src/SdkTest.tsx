@@ -1,13 +1,8 @@
-/*
- * Copyright 2025 Daytona Platforms Inc.
- * SPDX-License-Identifier: AGPL-3.0
- */
-
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Buffer } from 'buffer'
 
 // Import Daytona SDK
-import { Daytona, Sandbox, Image } from '@daytonaio/sdk'
+import { Daytona, Image } from '@daytonaio/sdk'
 
 interface LogEntry {
   type: 'info' | 'error' | 'success' | 'warning'
@@ -241,7 +236,7 @@ function SdkTest() {
       // Upload multiple files at once
       await sandbox.fs.uploadFiles([
         {
-          source: '/my-file',
+          source: Buffer.from('Hello, World!'),
           destination: `${newDir}/example.txt`,
         },
         {
@@ -623,8 +618,9 @@ plt.show()
 
     try {
       const daytona = new Daytona({
-        apiKey: 'dtn_e3c4797ad2310b5de5a4f4c4dbd2899b6e5c2a442fef1cba4280416f098e04ca',
+        apiKey: 'dtn_61e4730b894c889c',
       })
+      console.log(JSON.stringify(daytona, null, 4))
       addLog('Created Daytona instance', 'success', 'general')
 
       // Run all tests
