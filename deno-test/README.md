@@ -2,6 +2,15 @@
 
 Test suite for the Daytona TypeScript SDK running on Deno runtime.
 
+## TLDR
+```bash
+cd deno-test
+curl -fsSL https://deno.land/install.sh | sh
+# source ~/.bashrc or ~/.zshrc
+export DAYTONA_API_KEY="your-api-key-here"
+deno run --allow-all deno_test.ts
+```
+
 ## Setup
 
 1. Install Deno:

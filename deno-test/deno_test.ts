@@ -5,7 +5,7 @@
  */
 
 // @ts-expect-error: Deno is available in Deno runtime
-import { Daytona, Sandbox, Image } from 'npm:@daytonaio/sdk@0.24.4-alpha.6'
+import { Daytona, Sandbox, Image } from 'npm:@daytonaio/sdk@0.24.4-alpha.8'
 
 interface LogEntry {
   type: 'info' | 'error' | 'success' | 'warning'

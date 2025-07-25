@@ -618,7 +618,7 @@ plt.show()
 
     try {
       const daytona = new Daytona({
-        apiKey: 'dtn_61e4730b894c889c',
+        apiKey: import.meta.env.VITE_DAYTONA_API_KEY || 'your-api-key-here',
       })
       console.log(JSON.stringify(daytona, null, 4))
       addLog('Created Daytona instance', 'success', 'general')

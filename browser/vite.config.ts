@@ -7,7 +7,6 @@ export default defineConfig({
     react(),
     nodePolyfills({
       globals: { global: true, process: true, Buffer: true },
-      // exclude: ['path'],
       overrides: {
         path: 'path-browserify-win32',
       },
