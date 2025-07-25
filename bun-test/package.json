@@ -12,7 +12,7 @@
     "install-sdk": "bun add @daytonaio/sdk"
   },
   "dependencies": {
-    "@daytonaio/sdk": "0.24.4-alpha.8"
+    "@daytonaio/sdk": "0.24.4-alpha.11"
   },
   "devDependencies": {
     "typescript": "^5.0.0",

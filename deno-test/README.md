@@ -6,7 +6,7 @@ Test suite for the Daytona TypeScript SDK running on Deno runtime.
 ```bash
 cd deno-test
 curl -fsSL https://deno.land/install.sh | sh
-# source ~/.bashrc or ~/.zshrc
+# source ~/.bashrc or ~/.zshrc; or open new terminal
 export DAYTONA_API_KEY="your-api-key-here"
 deno run --allow-all deno_test.ts
 ```

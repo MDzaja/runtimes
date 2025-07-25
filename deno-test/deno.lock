@@ -6,6 +6,7 @@
     "npm:@daytonaio/sdk@0.24.4-alpha.3": "0.24.4-alpha.3_@aws-sdk+client-s3@3.850.0",
     "npm:@daytonaio/sdk@0.24.4-alpha.4": "0.24.4-alpha.4_@aws-sdk+client-s3@3.850.0",
     "npm:@daytonaio/sdk@0.24.4-alpha.6": "0.24.4-alpha.6_@aws-sdk+client-s3@3.850.0",
+    "npm:@daytonaio/sdk@0.24.4-alpha.9": "0.24.4-alpha.9_@aws-sdk+client-s3@3.850.0",
     "npm:@daytonaio/sdk@alpha": "0.22.2-alpha.0_@aws-sdk+client-s3@3.850.0",
     "npm:@daytonaio/sdk@latest": "0.24.2_@aws-sdk+client-s3@3.850.0"
   },
@@ -591,6 +592,12 @@
         "axios"
       ]
     },
+    "@daytonaio/api-client@0.24.4-alpha.9": {
+      "integrity": "sha512-rzCQZUwLMYxWagcI2mHicFpu95k457LzhhE79CHBjKj4BruHhitnkKCfRnu+dP6LDU09evxOcG/VxuubeuPusA==",
+      "dependencies": [
+        "axios"
+      ]
+    },
     "@daytonaio/sdk@0.22.2-alpha.0_@aws-sdk+client-s3@3.850.0": {
       "integrity": "sha512-+xFtDX7BiMGje7UgNfKvishA4lvktubCPJRf2P3BvTAvHNlJsew4LmEgIPFTDXkpzKkyB4tzgfmXYtY7cvSR7g==",
       "dependencies": [
@@ -697,6 +704,21 @@
         "dotenv",
         "pathe",
         "shell-quote"
+      ]
+    },
+    "@daytonaio/sdk@0.24.4-alpha.9_@aws-sdk+client-s3@3.850.0": {
+      "integrity": "sha512-7MR7SHIqURDfJ3WN2P1nhKFjN3w0qXt1eYa4VTMtfJMpKmyrKcx7LfiT0prL2+YTQcre2BCkITsn1lWNYsDE4w==",
+      "dependencies": [
+        "@aws-sdk/client-s3",
+        "@aws-sdk/lib-storage",
+        "@daytonaio/api-client@0.24.4-alpha.9",
+        "@iarna/toml",
+        "axios",
+        "dotenv",
+        "expand-tilde",
+        "fast-glob",
+        "shell-quote",
+        "tar"
       ]
     },
     "@iarna/toml@2.2.5": {

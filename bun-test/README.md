@@ -7,8 +7,8 @@ Test suite for the Daytona TypeScript SDK running on Bun runtime.
 ```bash
 cd bun-test
 curl -fsSL https://bun.sh/install | sh
-# source ~/.bashrc or ~/.zshrc
-bun install && npm run dev
+# source ~/.bashrc or ~/.zshrc; or open new terminal
+bun install
 export DAYTONA_API_KEY="your-api-key-here"
 bun run bun_test.ts
 ```
